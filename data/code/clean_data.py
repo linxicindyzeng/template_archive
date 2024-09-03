@@ -10,7 +10,13 @@ def main():
     df.to_csv('output/data_cleaned.csv', index = False)
 
 def plot_data(df):
-    plt.hist(df['chips_sold'])
+
+    plt.hist(df['chips_sold'], weights = 100 * np.ones(len(df['chips_sold'])) / len(df['chips_sold']))
+
+    plt.xlabel('Chips Sold')
+    plt.ylabel('Percentage')
+    plt.title('Percentages of Chips Sold')
+
     plt.savefig('output/chips_sold.pdf')
 
 def clean_data(df):
