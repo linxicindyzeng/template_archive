@@ -1,3 +1,4 @@
 destination | source
 input/regression.csv | /Users/zlxcindy/template_archive/analysis/output/regression.csv
+input/regression_ge_1960.csv | /Users/zlxcindy/template_archive/analysis/output/regression_ge_1960.csv
 input/chips_sold.pdf | /Users/zlxcindy/template_archive/data/output/chips_sold.pdf

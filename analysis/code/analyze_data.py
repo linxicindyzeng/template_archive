@@ -4,6 +4,8 @@ from linearmodels import PanelOLS
 
 ### DEFINE
 def main():
+
+    # Run regression on all years
     df = import_data()
     fit = run_regression(df)
     formatted = format_model(fit)
@@ -11,6 +13,15 @@ def main():
     with open('output/regression.csv', 'w') as f:
         f.write('<tab:regression>' + '\n')
         formatted.to_csv(f, sep = '\t', index = False, header = False)
+
+    # Run regression on years >= 1960
+    df_ge_1960 = df[df['year'] >= 1960].copy()
+    fit_ge_1960 = run_regression(df_ge_1960)
+    formatted_ge_1960 = format_model(fit_ge_1960)
+
+    with open('output/regression_ge_1960.csv', 'w') as f:
+        f.write('<tab:regression_ge_1960>' + '\n')
+        formatted_ge_1960.to_csv(f, sep = '\t', index = False, header = False)
     
 def import_data():
     df = pd.read_csv('input/data_cleaned.csv')

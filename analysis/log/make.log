@@ -1,5 +1,5 @@
 --------------------------------------------------------------------------------
-Makelog started: 2024-08-29 17:35:36
+Makelog started: 2024-09-03 14:59:20
 Working directory: /Users/zlxcindy/template_archive/analysis
 --------------------------------------------------------------------------------
 Input links successfully created!
@@ -12,9 +12,12 @@ Executing command: `python  "/Users/zlxcindy/template_archive/analysis/code/anal
 /opt/homebrew/Caskroom/miniconda/base/envs/template/lib/python3.12/site-packages/linearmodels/panel/model.py:1219: MissingValueWarning: 
 Inputs contain missing values. Dropping rows with missing observations.
   super().__init__(dependent, exog, weights=weights, check_rank=check_rank)
+/opt/homebrew/Caskroom/miniconda/base/envs/template/lib/python3.12/site-packages/linearmodels/panel/model.py:1219: MissingValueWarning: 
+Inputs contain missing values. Dropping rows with missing observations.
+  super().__init__(dependent, exog, weights=weights, check_rank=check_rank)
 
 Output logs successfully written!
 --------------------------------------------------------------------------------
-Makelog ended: 2024-08-29 17:35:39
+Makelog ended: 2024-09-03 14:59:23
 Working directory: /Users/zlxcindy/template_archive/analysis
 --------------------------------------------------------------------------------

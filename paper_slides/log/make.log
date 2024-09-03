@@ -1,13 +1,14 @@
 --------------------------------------------------------------------------------
-Makelog started: 2024-08-29 18:35:22
+Makelog started: 2024-09-03 14:59:23
 Working directory: /Users/zlxcindy/template_archive/paper_slides
 --------------------------------------------------------------------------------
 Input copies successfully created!
 External copies successfully created!
 Source logs successfully written!
 WARNING! The following target files have been modified according to git status:
-/Users/zlxcindy/template_archive/data/output/chips_sold.pdf
 /Users/zlxcindy/template_archive/analysis/output/regression.csv
+/Users/zlxcindy/template_archive/analysis/output/regression_ge_1960.csv
+/Users/zlxcindy/template_archive/data/output/chips_sold.pdf
 Version logs successfully written!
 Executing command: `pdflatex -output-directory=../latex_auxiliary_dir  "/Users/zlxcindy/template_archive/paper_slides/code/paper.tex"`
 This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex)
@@ -78,7 +79,7 @@ LaTeX Warning: Command \underline  has changed.
 LaTeX Warning: Unused global option(s):
     [hyperfootnotes].
 
-No file paper.aux.
+(./paper.aux)
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -133,17 +134,15 @@ pdfTeX warning (Object streams): \pdfobjcompresslevel > 0 requires PDF-1.5 or g
 reater. Object streams disabled now.
 [1{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 [2] [3] (./figures.tex) [4 <../latex_auxiliary_dir/../input/chips_sold.pdf>]
-(../output/tables_filled.tex) [5] [6] (../latex_auxiliary_dir/paper.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- )
+(../output/tables_filled.tex) (../output/tables_ge_1960_filled.tex) [5]
+[6] (../latex_auxiliary_dir/paper.aux) )
 (see the transcript file for additional information){/usr/local/texlive/2022/te
 xmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2022/texmf-dist/fonts/
-type1/urw/symbol/usyr.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/t
-imes/utmb8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmr8
-a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on ../latex_auxiliary_dir/paper.pdf (6 pages, 57464 bytes).
+type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/t
+ype1/urw/symbol/usyr.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/ti
+mes/utmb8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmr8a
+.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on ../latex_auxiliary_dir/paper.pdf (6 pages, 66534 bytes).
 Transcript written on ../latex_auxiliary_dir/paper.log.
 
 Executing command: `pdflatex -output-directory=../latex_auxiliary_dir  "/Users/zlxcindy/template_archive/paper_slides/code/online_appendix.tex"`
@@ -262,7 +261,7 @@ st/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/
 urw/times/utmb8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/
 utmr8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmri8a.pf
 b>
-Output written on ../latex_auxiliary_dir/online_appendix.pdf (1 page, 33533 byt
+Output written on ../latex_auxiliary_dir/online_appendix.pdf (1 page, 34103 byt
 es).
 Transcript written on ../latex_auxiliary_dir/online_appendix.log.
 
@@ -569,6 +568,6 @@ Transcript written on ../latex_auxiliary_dir/slides.log.
 
 Output logs successfully written!
 --------------------------------------------------------------------------------
-Makelog ended: 2024-08-29 18:35:24
+Makelog ended: 2024-09-03 14:59:26
 Working directory: /Users/zlxcindy/template_archive/paper_slides
 --------------------------------------------------------------------------------

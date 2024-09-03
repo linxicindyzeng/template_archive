@@ -1,13 +1,10 @@
 --------------------------------------------------------------------------------
-Makelog started: 2024-08-29 18:32:38
+Makelog started: 2024-09-03 14:59:16
 Working directory: /Users/zlxcindy/template_archive/data
 --------------------------------------------------------------------------------
 Input links successfully created!
 External links successfully created!
 Source logs successfully written!
-WARNING! The following target files have been modified according to git status:
-/Users/zlxcindy/template_archive/raw/chips.csv
-/Users/zlxcindy/template_archive/raw/tv.csv
 Version logs successfully written!
 Executing command: `python  "/Users/zlxcindy/template_archive/data/code/merge_data.py" `
 Executing command: `python  "/Users/zlxcindy/template_archive/data/code/clean_data.py" `
@@ -30,6 +27,6 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 
 Output logs successfully written!
 --------------------------------------------------------------------------------
-Makelog ended: 2024-08-29 18:32:43
+Makelog ended: 2024-09-03 14:59:20
 Working directory: /Users/zlxcindy/template_archive/data
 --------------------------------------------------------------------------------
