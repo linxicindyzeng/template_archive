@@ -1,4 +1,6 @@
 destination | source
-input/regression.csv | /Users/zlxcindy/template_archive/analysis/output/regression.csv
-input/regression_ge_1960.csv | /Users/zlxcindy/template_archive/analysis/output/regression_ge_1960.csv
-input/chips_sold.pdf | /Users/zlxcindy/template_archive/data/output/chips_sold.pdf
+input/regression.csv | /oak/stanford/groups/gentzkow/zlxcindy/template_archive/analysis/output/regression.csv
+input/regression_ge_1960.csv | /oak/stanford/groups/gentzkow/zlxcindy/template_archive/analysis/output/regression_ge_1960.csv
+input/regression_cls.csv | /oak/stanford/groups/gentzkow/zlxcindy/template_archive/analysis/output/regression_cls.csv
+input/regression_ge_1960_cls.csv | /oak/stanford/groups/gentzkow/zlxcindy/template_archive/analysis/output/regression_ge_1960_cls.csv
+input/chips_sold.pdf | /oak/stanford/groups/gentzkow/zlxcindy/template_archive/data/output/chips_sold.pdf

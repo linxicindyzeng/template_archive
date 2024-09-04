@@ -14,6 +14,13 @@ def main():
         f.write('<tab:regression>' + '\n')
         formatted.to_csv(f, sep = '\t', index = False, header = False)
 
+    fit_cls = run_regression_cls(df)
+    formatted_cls = format_model(fit_cls)
+
+    with open('output/regression_cls.csv', 'w') as f:
+        f.write('<tab:regression_cls>' + '\n')
+        formatted_cls.to_csv(f, sep = '\t', index = False, header = False)
+
     # Run regression on years >= 1960
     df_ge_1960 = df[df['year'] >= 1960].copy()
     fit_ge_1960 = run_regression(df_ge_1960)
@@ -22,7 +29,20 @@ def main():
     with open('output/regression_ge_1960.csv', 'w') as f:
         f.write('<tab:regression_ge_1960>' + '\n')
         formatted_ge_1960.to_csv(f, sep = '\t', index = False, header = False)
+
+    fit_ge_1960_cls = run_regression_cls(df_ge_1960)
+    formatted_ge_1960_cls= format_model(fit_ge_1960_cls)
+
+    with open('output/regression_ge_1960_cls.csv', 'w') as f:
+        f.write('<tab:regression_ge_1960_cls>' + '\n')
+        formatted_ge_1960_cls.to_csv(f, sep = '\t', index = False, header = False)
     
+def run_regression_cls(df):
+    df = df.set_index(['county_id', 'year'])
+    model = PanelOLS.from_formula('chips_sold ~ 1 + post_tv + EntityEffects + TimeEffects', data = df)
+    fit = model.fit(cov_type='clustered', cluster_entity=True)
+    return(fit)
+
 def import_data():
     df = pd.read_csv('input/data_cleaned.csv')
     df['post_tv'] = df['year'] > df['year_tv_introduced']
